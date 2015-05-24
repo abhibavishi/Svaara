@@ -1,0 +1,13 @@
+{
+  "name": "Svaara",
+  "version": "0.0.1",
+  "dependencies": {
+    "select2": "3.4.5",
+    "backbone": "1.1.0",
+    "fontawesome": "4.3.0",
+    "jplayer": "2.9.2",
+    "normalize-css": "3.0.3",
+    "peerjs":"0.3.14"
+  },
+  "private": true
+}

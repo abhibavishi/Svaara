@@ -1,0 +1,94 @@
+<head>
+  <title>Svaara</title>
+</head>
+
+
+
+<body>
+	<link rel="shortcut icon" href="images/favicon.ico" type="images/favicon.ico">
+<link rel="icon" href="images/favicon.ico" type="images/favicon.ico">
+
+
+<div class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+        <a id="logo" href="target_" title="Go to Svaara">
+		<img src="images/logo.png" alt="Svaara" style="height: 37px;">
+		</a>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            {{> loginButtons }}
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+             <!-- here -->
+        </ul>
+    </div>
+</div>
+
+<span>Your peer id is: {{peerId}}, and you want to establish connection with:
+  <form class="new-task">
+    <input type="text" name="text" placeholder="Type your peer's Id here ..." />
+        <button class="sendicon" type="submit" id="sendMessage" name="sendMessage"><i class="fa fa-paper-plane"></i></button>
+      </form>
+</span>
+
+<div class="fload">
+	{{> fileUpload}}
+  {{> newMusicPlayer}}
+</div>
+</body>
+
+<template name="fileUpload">
+<input type="file" name="..." class="myFileInput" id="songFile">
+</template>
+
+<template name="newMusicPlayer">
+<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+
+<div id="jp_container_1" class="jp-audio">
+  <div class="jp-type-single">
+
+
+
+    <div class="jp-gui jp-interface">
+
+        <ul class="jp-controls">
+          <li><a href="javascript:;" class="jp-play" tabindex="1">&#61515;</a></li>
+          <li><a href="javascript:;" class="jp-pause" tabindex="1">&#61516;</a></li>
+          <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">&#61480;</a></li>
+          <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">&#61478;</a></li>
+        </ul>
+
+        <span class="jp-title">
+          <ul>
+          </ul>
+        </span>
+
+        <div class="jp-progress">
+          <div class="jp-seek-bar">
+            <div class="jp-play-bar"></div>
+          </div>
+        </div>
+
+        <div class="jp-time-holder">
+          <div class="jp-current-time"></div>
+        </div>
+
+        <div class="jp-volume-bar">
+          <div class="jp-volume-bar-value"></div>
+        </div>
+
+    <div class="jp-no-solution">
+      <span>Update Required</span>
+      To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+    </div>
+  </div>
+</div>
+</div>
+</template>
